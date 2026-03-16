@@ -1,95 +1,89 @@
 body{
-    font-family:"Tahoma", Arial;
-    background:linear-gradient(#f7f7f7,#e9f1f2);
-    margin:0;
-    padding:0;
-  }
-  
-  /* container لجميع الصفحات ما عدا الرئيسية */
-  .container{
-    max-width:700px;
-    width:90%;          
-    min-height:80vh;    
-    margin:40px auto;   
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start; /* يبدأ المحتوى من الأعلى */
-  }
-  
-  h1{
-    text-align:center;
-    color:#2c6e6f;
-    margin-bottom:30px;
-  }
-  
-  .section{
-    margin-bottom:15px;
-    padding:15px;
-    background:#f6fbfb;
-    border-radius:10px;
-  }
-  
-  .section h2{
-    margin:0 0 10px 0;
-    color:#1f4d4f;
-  }
-  
-  .button{
-    display:inline-block;
-    margin:10px;
-    padding:12px 25px;
-    background:#2c7a7b;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-size:16px;
-    transition:0.3s;
-  }
-  
-  .button:hover{
-    background:#205c5d;
-  }
-  
-  /* زر العودة لكل الصفحات */
-  .center{
-    text-align:center;
-    margin-top:auto;
-  }
-  
-  .note{
-    margin-top:10px;
-    padding:10px;
-    background:#e0f7f7;
-    border-left:4px solid #2c7a7b;
-    border-radius:5px;
-    color:#1f4d4f;
-  }
-  
-  /* تحسين العرض على الشاشات الصغيرة */
-  @media screen and (max-width: 600px){
-    h1{ font-size:24px; }
-    h2{ font-size:18px; }
-    p{ font-size:16px; line-height:1.6; }
-    .button{ font-size:15px; padding:10px 20px; }
-    .container{ padding:20px; margin:20px auto; }
-  }
-  
-  /* container خاص بالصفحة الرئيسية لتوزيع الأزرار */
-  .index-container{
-    max-width:700px;
-    width:90%;
-    min-height:80vh;
-    margin:40px auto;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around; /* يوزع الأزرار على كامل الارتفاع */
-    align-items:center;
-  }
+  font-family:"Tahoma", Arial;
+  background:linear-gradient(#f7f7f7,#e9f1f2);
+  margin:0;
+  padding:0;
+}
+
+.container{
+  max-width:700px;
+  width:90%;          
+  min-height:80vh;    
+  margin:40px auto;   
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+h1{
+  text-align:center;
+  color:#2c6e6f;
+  margin-bottom:30px;
+  font-size:40px; /* تكبير الخط */
+}
+
+.section{
+  margin-bottom:15px;
+  padding:15px;
+  background:#f6fbfb;
+  border-radius:10px;
+}
+
+.section h2{
+  margin:0 0 10px 0;
+  color:#1f4d4f;
+  font-size:28px; /* تكبير الخط */
+}
+
+p{
+  font-size:22px; /* تكبير الخط */
+  line-height:1.8;
+}
+
+.button{
+  display:inline-block;
+  margin:15px;
+  padding:20px 30px;
+  background:#2c7a7b;
+  color:white;
+  text-decoration:none;
+  border-radius:12px;
+  font-size:22px; /* تكبير الخط */
+  transition:0.3s;
+  text-align:center;
+  width:90%; /* يجعل كل زر كبير ويملأ تقريبًا المساحة */
+}
+
+.button:hover{
+  background:#205c5d;
+}
+
+.center{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  height:80%; /* يملأ المساحة المتاحة */
+}
+
+.note{
+  margin-top:10px;
+  padding:10px;
+  background:#e0f7f7;
+  border-left:4px solid #2c7a7b;
+  border-radius:5px;
+  color:#1f4d4f;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media screen and (max-width: 600px){
+  h1{ font-size:36px; }
+  h2{ font-size:24px; }
+  p{ font-size:20px; line-height:1.6; }
+  .button{ font-size:20px; padding:15px 20px; width:95%; }
+  .container{ padding:20px; margin:20px auto; }
+}
